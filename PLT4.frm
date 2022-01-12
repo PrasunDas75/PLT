@@ -72,19 +72,38 @@ num1 = Val(txtNum1.Text)
 num2 = Val(txtNum2.Text)
 num3 = Val(txtNum3.Text)
 
-If (num1 >= num2 And num1 >= num3) Then
+If (num1 > num2 And num1 > num3) Then
         largest = num1
         
+        If (num2 > num3) Then
+            secondLargest = num2
+        Else
+            secondLargest = num3
         End If
-
-
-If (num2 >= num1 And num2 >= num3) Then
-        largest = num2
         
         End If
 
-If (num3 >= num1 And num3 >= num2) Then
+
+If (num2 > num1 And num2 > num3) Then
+        largest = num2
+        
+        If (num1 > num3) Then
+            secondLargest = num1
+        Else
+            secondLargest = num3
+        End If
+        
+        End If
+
+If (num3 > num1 And num3 > num2) Then
         largest = num3
+        
+        If (num1 > num2) Then
+            secondLargest = num1
+        Else
+            secondLargest = num2
+        End If
+        
         End If
 
 txtLargest.Text = largest

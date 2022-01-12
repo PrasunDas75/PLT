@@ -38,9 +38,9 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Private Sub cmdDisp_Click()
-Dim num As Integer
+Dim num As Double
 Dim digit As String
-Dim r As Integer
+Dim r As Double
 
 num = Val(txtNum1.Text)
 
@@ -48,23 +48,25 @@ While num > 0
     r = num Mod 10
     Select Case r
         Case 1
-        digit = "one"
+        digit = "One"
         Case 2
-        digit = "two"
+        digit = "Two"
         Case 3
-        digit = "three"
+        digit = "Three"
         Case 4
-        digit = "four"
+        digit = "Four"
         Case 5
-        digit = "five"
+        digit = "Five"
         Case 6
-        digit = "six"
+        digit = "Six"
         Case 7
-        digit = "seven"
+        digit = "Seven"
         Case 8
-        digit = "eight"
+        digit = "Eight"
         Case 9
-        digit = "nine"
+        digit = "Nine"
+        Case 0
+        digit = "Zero"
     End Select
     
     txtRes.Text = digit & " " & txtRes.Text

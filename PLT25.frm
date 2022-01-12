@@ -100,17 +100,17 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 
 Dim i As Integer
-Dim N As Integer
+Dim n As Integer
 Dim a() As Integer
 
 
 Private Sub cmdEnterN_Click()
-N = val(txtN.Text) - 1
-ReDim a(N)
+n = Val(txtN.Text) - 1
+ReDim a(n)
 End Sub
 
 Private Sub cmdEnter_Click()
-a(i) = val(txtEnter.Text)
+a(i) = Val(txtEnter.Text)
 txtRes1.Text = txtRes1.Text & " " & a(i)
 txtEnter.Text = ""
 i = i + 1
@@ -121,15 +121,15 @@ End Sub
 Private Sub cmdSrch_Click()
 Dim srch As Integer
 Dim c As Integer
-srch = val(txtSrch.Text)
+srch = Val(txtSrch.Text)
 
-For c = 0 To N
+For c = 0 To n
     If a(c) = srch Then
         txtRes2.Text = "Presnt at " & (c + 1)
         Exit For
     End If
 Next
-If c = N + 1 Then
+If c = n + 1 Then
     txtRes2.Text = "Not Present"
 End If
 End Sub
