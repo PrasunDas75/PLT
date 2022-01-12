@@ -13,7 +13,6 @@ Begin VB.Form frmMof7
       Height          =   1335
       Left            =   840
       TabIndex        =   1
-      Text            =   "Text1"
       Top             =   1560
       Width           =   6495
    End
@@ -32,13 +31,16 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Private Sub cmdStart_Click()
-Dim n, i, j As Integer
-
+Dim n, i, j, c As Integer
+c = 0
 For i = 1 To 10
     n = 7 * i
     For j = 2 To 7
         If (n Mod j = 1) Then
-        txtRes.Text = n
+        c = c + 1
+        If c = 1 Or c = 2 Or c = 4 Then
+            txtRes.Text = txtRes.Text & " " & n
+        End If
         Exit For
         End If
     Next
