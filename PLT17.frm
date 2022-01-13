@@ -147,7 +147,7 @@ Begin VB.Form frmPurchase
       End
    End
    Begin VB.Label Label6 
-      Caption         =   "Next ?"
+      Caption         =   "OK?"
       Height          =   255
       Left            =   1440
       TabIndex        =   11

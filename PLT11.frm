@@ -193,23 +193,19 @@ Private Sub cmdStart5_Click()
 s = " "
 
 Dim count As Integer
-Dim b As Integer
+Dim b, n1, n2, n3 As Integer
 count = 0
 b = 1
 
-For i = 1 To n
-    count = count + 1
-    
-    If count = 3 Then
-        b = b
-        s = s
-        count = 0
-    Else
-        b = b + 4 * i
-        
-        
+n3 = 12
+
+s = Str(1) & Str(4) & Str(7) & Str(n3)
+
+For i = 3 To 10
+    n3 = n3 + (3 + 2 ^ i)
+    If n3 < n Then
+    s = s & Str(n3)
     End If
-    
 Next
 
 txtRes5.Text = s

@@ -156,6 +156,8 @@ Dim first, last, midl, srch As Integer
 
 Dim s As String
 
+s = ""
+
 srch = Val(txtSrch.Text)
 
 first = 0
@@ -172,5 +174,9 @@ While first <= last
         last = midl - 1
     End If
     txtRes2.Text = s
+    If s = "" Then
+    txtRes2.Text = "not found"
+    End If
 Wend
+
 End Sub
