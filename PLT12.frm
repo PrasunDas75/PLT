@@ -104,7 +104,7 @@ For i = m To n
     Next
     
     If f = 1 Then
-       txtRes.Text = txtRes.Text & ", " & i
+       txtRes.Text = txtRes.Text & " " & i
        sum = sum + i
     End If
     

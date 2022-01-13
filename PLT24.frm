@@ -1,5 +1,5 @@
 VERSION 5.00
-Begin VB.Form frmPattern23 
+Begin VB.Form frmPattern24 
    Caption         =   "Form2"
    ClientHeight    =   9030
    ClientLeft      =   120
@@ -89,7 +89,7 @@ Begin VB.Form frmPattern23
       Width           =   375
    End
 End
-Attribute VB_Name = "frmPattern23"
+Attribute VB_Name = "frmPattern24"
 Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
@@ -102,9 +102,17 @@ Dim s As String
 Private Sub cmdGen1_Click()
 r = Val(txtN.Text)
 
+Dim k As Integer
+k = 1
+
 For i = 1 To r
     For j = 1 To i
-        s = s & Str(j) & " "
+        If k Mod 2 = 0 Then
+            s = s & Str(-(k ^ 2)) & " "
+        Else
+            s = s & Str(k ^ 2) & " "
+        End If
+        k = k + 1
     Next
     s = s & vbCrLf
 Next
@@ -114,9 +122,23 @@ End Sub
 Private Sub cmdGen2_Click()
 s = ""
 
+Dim k, f, c As Integer
+k = 0
+c = 1
+f = 1
+
 For i = 1 To r
     For j = 1 To i
-        s = s & Str(i) & " "
+        If k = 0 Then
+            s = s & Str(1) & " "
+        Else
+            While c <= k
+                f = f * c
+                c = c + 1
+            Wend
+            s = s & Str(f) & " "
+        End If
+        k = k + 1
     Next
     s = s & vbCrLf
 Next
@@ -127,12 +149,13 @@ Private Sub cmdGen3_Click()
 s = ""
 
 Dim k As Integer
-k = 1
 
 For i = 1 To r
-    For j = 1 To i
-        s = s & Str(k) & " "
-        k = k + 1
+    For j = i To r
+        s = s & " "
+    Next
+    For k = 1 To i
+        s = s & "*"
     Next
     s = s & vbCrLf
 Next
@@ -142,25 +165,27 @@ End Sub
 Private Sub cmdGen4_Click()
 s = ""
 
-Dim N1 As Integer
-Dim N2 As Integer
-Dim N3 As Integer
+Dim k, sp, num As Integer
 
-N1 = 0
-N2 = 1
+sp = r - 1
+num = 1
 
-txtRes4.Text = Str(N2) & vbCrLf
-
-
-For i = 2 To r
-    For j = 1 To i
-        N3 = N1 + N2
-            s = s & Str(N3)
-            N1 = N2
-            N2 = N3
+For i = 1 To r
+    For j = 1 To sp
+        s = s & " "
     Next
-    txtRes4.Text = txtRes4.Text & vbCrLf & s & vbCrLf
-    s = ""
+    For k = 1 To num
+        s = s & "*"
+    Next
+    If sp > i Then
+        sp = sp - 1
+        num = num + 2
+    End If
+    If sp < i Then
+        sp = sp + 1
+        num = num - 2
+    End If
+    s = s & vbCrLf
 Next
-
+txtRes4.Text = s
 End Sub

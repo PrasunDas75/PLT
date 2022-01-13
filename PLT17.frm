@@ -166,6 +166,36 @@ Private Type item
     qty As Integer
     price As Integer
     total As Integer
-    granTotal As Integer
     
 End Type
+
+Dim i(20) As item
+Dim index As Integer
+Dim ci As Integer
+Dim gTotal As Integer
+
+Private Sub cmdNext_Click()
+index = index + 1
+update (index)
+End Sub
+
+Private Sub update(index As Integer)
+With i(index)
+.code = txtCode.Text
+.desc = txtDesc.Text
+.qty = Val(txtQty.Text)
+.price = Val(txtPrice.Text)
+.total = Val(txtTotPrice.Text)
+End With
+End Sub
+
+Private Sub cmdTotal_Click()
+For c = 0 To index
+    gTotal = gTotal + i(c).total
+Next
+txtGrandTotal.Text = gTotal
+End Sub
+
+Private Sub cmdTotPrice_Click()
+txtTotPrice.Text = Val(txtQty.Text) * Val(txtPrice.Text)
+End Sub
