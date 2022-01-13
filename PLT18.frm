@@ -1,12 +1,12 @@
 VERSION 5.00
 Begin VB.Form frmPattern18 
-   Caption         =   "Form2"
-   ClientHeight    =   10035
+   Caption         =   "GenerateSeries18"
+   ClientHeight    =   6480
    ClientLeft      =   120
    ClientTop       =   465
    ClientWidth     =   7170
    LinkTopic       =   "Form2"
-   ScaleHeight     =   10035
+   ScaleHeight     =   6480
    ScaleWidth      =   7170
    StartUpPosition =   3  'Windows Default
    Begin VB.TextBox txtRes4 
@@ -134,7 +134,7 @@ n = 1
 For i = 0 To r
     count = count + 1
     n = n + (i ^ 2)
-    If n <= r Then
+    If n < r Then
        If count Mod 2 = 0 Then
             s = s & " " & Str(-n)
        Else
@@ -182,13 +182,16 @@ n3 = 8
 txtRes4.Text = Str(n1) & " " & Str(n2) & " " & Str(n3)
 
 For i = 1 To r
-    If n4 < r - 2 Then
+        
         n4 = n1 + n2 + n3
+        If n4 <= r Then
         s = s & " " & Str(n4)
+        
         n1 = n2
         n2 = n3
         n3 = n4
-    End If
+        End If
+    
 Next
 
 txtRes4.Text = txtRes4.Text & s

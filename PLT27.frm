@@ -1,6 +1,6 @@
 VERSION 5.00
 Begin VB.Form frmMatDisp 
-   Caption         =   "Form1"
+   Caption         =   "DisplayMatrixAndTranspose"
    ClientHeight    =   8310
    ClientLeft      =   120
    ClientTop       =   465

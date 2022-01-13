@@ -1,6 +1,6 @@
 VERSION 5.00
 Begin VB.Form frmPattern11 
-   Caption         =   "Form1"
+   Caption         =   "GenerateSeries11"
    ClientHeight    =   9990
    ClientLeft      =   120
    ClientTop       =   465
@@ -143,7 +143,7 @@ Private Sub cmdStart2_Click()
 s = ""
 
 For i = 1 To n
-    If i <= n - 1 Then
+    If i <= n Then
     If i Mod 2 = 0 Then
         s = s & " " & Str(i * -1)
         
@@ -180,7 +180,9 @@ For i = 1 To n
         s = s
         count = 0
     Else
+        If (i ^ 2) <= n Then
         s = s & " " & Str(i ^ 2)
+        End If
     End If
 Next
 
@@ -188,7 +190,7 @@ txtRes4.Text = s
 End Sub
 
 Private Sub cmdStart5_Click()
-s = "1 4"
+s = " "
 
 Dim count As Integer
 Dim b As Integer
@@ -204,10 +206,8 @@ For i = 1 To n
         count = 0
     Else
         b = b + 4 * i
-        If b <= n Then
-        s = s & " " & Str(b)
         
-        End If
+        
     End If
     
 Next
@@ -231,7 +231,9 @@ For i = 1 To n
         count = 0
     Else
         b = b + 4 * i
+        If b <= n Then
         s = s & " " & Str(b)
+        End If
     End If
 Next
 

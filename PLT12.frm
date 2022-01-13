@@ -1,6 +1,6 @@
 VERSION 5.00
 Begin VB.Form frmPrime 
-   Caption         =   "Form2"
+   Caption         =   "SumOfPrimeNumbers"
    ClientHeight    =   4875
    ClientLeft      =   120
    ClientTop       =   465

@@ -1,27 +1,27 @@
 VERSION 5.00
 Begin VB.Form frmRevString 
-   Caption         =   "Form2"
-   ClientHeight    =   5370
+   Caption         =   "ReverseOfString"
+   ClientHeight    =   3165
    ClientLeft      =   120
    ClientTop       =   465
    ClientWidth     =   5670
    LinkTopic       =   "Form2"
-   ScaleHeight     =   5370
+   ScaleHeight     =   3165
    ScaleWidth      =   5670
    StartUpPosition =   3  'Windows Default
    Begin VB.TextBox txtRes1 
-      Height          =   975
-      Left            =   360
+      Height          =   615
+      Left            =   240
       TabIndex        =   3
-      Top             =   3720
-      Width           =   4935
+      Top             =   2280
+      Width           =   5175
    End
    Begin VB.CommandButton cmdRev 
       Caption         =   "Reverse"
-      Height          =   615
+      Height          =   495
       Left            =   1800
       TabIndex        =   2
-      Top             =   2160
+      Top             =   1560
       Width           =   1815
    End
    Begin VB.TextBox txtStr1 

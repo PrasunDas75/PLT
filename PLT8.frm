@@ -1,37 +1,43 @@
 VERSION 5.00
 Begin VB.Form frmSumOdd 
-   Caption         =   "Form2"
-   ClientHeight    =   5595
+   Caption         =   "SumOfOddNumbers"
+   ClientHeight    =   3555
    ClientLeft      =   120
    ClientTop       =   465
-   ClientWidth     =   8220
+   ClientWidth     =   7380
    LinkTopic       =   "Form2"
-   ScaleHeight     =   5595
-   ScaleWidth      =   8220
+   ScaleHeight     =   3555
+   ScaleWidth      =   7380
    StartUpPosition =   3  'Windows Default
    Begin VB.TextBox txtSum 
-      Height          =   855
-      Left            =   1800
+      Height          =   735
+      Left            =   1920
       TabIndex        =   2
-      Text            =   "Text1"
-      Top             =   3000
-      Width           =   3735
+      Top             =   2640
+      Width           =   3135
    End
    Begin VB.CommandButton cmdCalc 
       Caption         =   "Calculate"
       Height          =   615
-      Left            =   2520
+      Left            =   2640
       TabIndex        =   1
       Top             =   1800
-      Width           =   2175
+      Width           =   1575
    End
    Begin VB.TextBox txtN 
       Height          =   615
-      Left            =   1800
+      Left            =   2760
       TabIndex        =   0
-      Text            =   "Text1"
-      Top             =   480
-      Width           =   3615
+      Top             =   960
+      Width           =   1335
+   End
+   Begin VB.Label Label1 
+      Caption         =   "Enter N:"
+      Height          =   375
+      Left            =   3000
+      TabIndex        =   3
+      Top             =   360
+      Width           =   855
    End
 End
 Attribute VB_Name = "frmSumOdd"

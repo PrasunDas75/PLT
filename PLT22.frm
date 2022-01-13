@@ -1,6 +1,6 @@
 VERSION 5.00
-Begin VB.Form Form1 
-   Caption         =   "Form1"
+Begin VB.Form frmPattern22 
+   Caption         =   "GeneratePattern22"
    ClientHeight    =   4185
    ClientLeft      =   120
    ClientTop       =   465
@@ -89,7 +89,7 @@ Begin VB.Form Form1
       Width           =   375
    End
 End
-Attribute VB_Name = "Form1"
+Attribute VB_Name = "frmPattern22"
 Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True

@@ -1,53 +1,81 @@
 VERSION 5.00
 Begin VB.Form frmSimpleInterest 
    Caption         =   "SimpleInterest"
-   ClientHeight    =   8130
+   ClientHeight    =   4695
    ClientLeft      =   120
    ClientTop       =   465
-   ClientWidth     =   10290
+   ClientWidth     =   5910
    LinkTopic       =   "Form1"
-   ScaleHeight     =   8130
-   ScaleWidth      =   10290
+   ScaleHeight     =   4695
+   ScaleWidth      =   5910
    StartUpPosition =   3  'Windows Default
    Begin VB.TextBox txtResult 
-      Height          =   1335
-      Left            =   3240
+      Height          =   495
+      Left            =   480
       TabIndex        =   4
-      Text            =   "Result"
-      Top             =   4800
-      Width           =   3855
+      Top             =   3840
+      Width           =   4935
    End
    Begin VB.CommandButton cmdCalculate 
       Caption         =   "Calculate"
-      Height          =   975
-      Left            =   3360
+      Height          =   615
+      Left            =   2400
       TabIndex        =   3
-      Top             =   3000
-      Width           =   3255
+      Top             =   2640
+      Width           =   1215
    End
    Begin VB.TextBox txtRate 
-      Height          =   975
-      Left            =   6960
+      Height          =   495
+      Left            =   3240
       TabIndex        =   2
-      Text            =   "Rate"
-      Top             =   840
-      Width           =   2655
+      Top             =   1440
+      Width           =   855
    End
    Begin VB.TextBox txtTime 
-      Height          =   975
-      Left            =   3240
+      Height          =   495
+      Left            =   4560
       TabIndex        =   1
-      Text            =   "Time"
-      Top             =   840
-      Width           =   2895
+      Top             =   1440
+      Width           =   855
    End
    Begin VB.TextBox txtPrinciple 
-      Height          =   1095
-      Left            =   360
+      Height          =   495
+      Left            =   480
       TabIndex        =   0
-      Text            =   "Principle"
-      Top             =   720
-      Width           =   1935
+      Top             =   1440
+      Width           =   2175
+   End
+   Begin VB.Label Label4 
+      Caption         =   "Simple Interest:"
+      Height          =   375
+      Left            =   480
+      TabIndex        =   8
+      Top             =   3480
+      Width           =   2055
+   End
+   Begin VB.Label Label3 
+      Caption         =   "Time:"
+      Height          =   375
+      Left            =   4560
+      TabIndex        =   7
+      Top             =   1080
+      Width           =   855
+   End
+   Begin VB.Label Label2 
+      Caption         =   "Rate:"
+      Height          =   375
+      Left            =   3240
+      TabIndex        =   6
+      Top             =   1080
+      Width           =   735
+   End
+   Begin VB.Label Label1 
+      Caption         =   "Enter Principle:"
+      Height          =   375
+      Left            =   480
+      TabIndex        =   5
+      Top             =   1080
+      Width           =   1695
    End
 End
 Attribute VB_Name = "frmSimpleInterest"

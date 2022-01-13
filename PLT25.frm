@@ -1,6 +1,6 @@
 VERSION 5.00
 Begin VB.Form frmArrayLinear 
-   Caption         =   "Form2"
+   Caption         =   "ArrayLinearSearch"
    ClientHeight    =   4590
    ClientLeft      =   120
    ClientTop       =   465

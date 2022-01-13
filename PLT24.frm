@@ -1,77 +1,77 @@
 VERSION 5.00
 Begin VB.Form frmPattern24 
-   Caption         =   "Form2"
-   ClientHeight    =   9030
+   Caption         =   "GeneratePattern24"
+   ClientHeight    =   8685
    ClientLeft      =   120
    ClientTop       =   465
-   ClientWidth     =   10650
+   ClientWidth     =   10140
    LinkTopic       =   "Form2"
-   ScaleHeight     =   9030
-   ScaleWidth      =   10650
+   ScaleHeight     =   8685
+   ScaleWidth      =   10140
    StartUpPosition =   3  'Windows Default
    Begin VB.TextBox txtRes4 
-      Height          =   2655
-      Left            =   7920
+      Height          =   2535
+      Left            =   4080
       MultiLine       =   -1  'True
       TabIndex        =   9
-      Top             =   2520
-      Width           =   2175
+      Top             =   5760
+      Width           =   3015
    End
    Begin VB.CommandButton cmdGen4 
       Caption         =   "Generate4"
       Height          =   495
-      Left            =   8280
+      Left            =   5040
       TabIndex        =   8
-      Top             =   1920
-      Width           =   1215
+      Top             =   5040
+      Width           =   1335
    End
    Begin VB.CommandButton cmdGen3 
       Caption         =   "Generate3"
       Height          =   495
-      Left            =   5760
+      Left            =   1080
       TabIndex        =   7
-      Top             =   1920
+      Top             =   5040
       Width           =   1335
    End
    Begin VB.TextBox txtRes3 
-      Height          =   2655
-      Left            =   5400
+      Height          =   2535
+      Left            =   360
       MultiLine       =   -1  'True
       TabIndex        =   6
-      Top             =   2520
-      Width           =   2175
+      Top             =   5760
+      Width           =   2775
    End
    Begin VB.CommandButton cmdGen2 
       Caption         =   "Generate2"
       Height          =   495
-      Left            =   3240
+      Left            =   4920
       TabIndex        =   5
-      Top             =   1920
+      Top             =   1200
       Width           =   1335
    End
    Begin VB.TextBox txtRes2 
-      Height          =   2655
-      Left            =   2880
+      Height          =   2775
+      Left            =   3840
       MultiLine       =   -1  'True
       TabIndex        =   4
-      Top             =   2520
-      Width           =   2175
+      Top             =   1920
+      Width           =   5655
    End
    Begin VB.TextBox txtRes1 
-      Height          =   2655
+      Height          =   2775
       Left            =   240
       MultiLine       =   -1  'True
       TabIndex        =   2
-      Top             =   2520
-      Width           =   2295
+      Top             =   1920
+      Width           =   3015
    End
    Begin VB.CommandButton cmdGen1 
       Caption         =   "Generate1"
       Height          =   495
-      Left            =   600
+      Left            =   1080
       TabIndex        =   1
-      Top             =   1920
-      Width           =   1455
+      Top             =   1200
+      Width           =   1335
    End
    Begin VB.TextBox txtN 
       Height          =   615

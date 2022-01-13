@@ -1,6 +1,6 @@
 VERSION 5.00
 Begin VB.Form frmEmp 
-   Caption         =   "Form1"
+   Caption         =   "EmployeeDB"
    ClientHeight    =   7725
    ClientLeft      =   120
    ClientTop       =   465

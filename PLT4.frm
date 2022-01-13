@@ -1,111 +1,65 @@
 VERSION 5.00
-Begin VB.Form frmLargest 
-   Caption         =   "Form2"
-   ClientHeight    =   7275
+Begin VB.Form frmDecimalSeparator 
+   Caption         =   "DecimalSeparator"
+   ClientHeight    =   3525
    ClientLeft      =   120
    ClientTop       =   465
-   ClientWidth     =   11550
+   ClientWidth     =   4500
    LinkTopic       =   "Form2"
-   ScaleHeight     =   7275
-   ScaleWidth      =   11550
+   ScaleHeight     =   3525
+   ScaleWidth      =   4500
    StartUpPosition =   3  'Windows Default
-   Begin VB.CommandButton cmdFind 
-      Caption         =   "Find"
-      Height          =   615
-      Left            =   4560
-      TabIndex        =   5
-      Top             =   3120
-      Width           =   2655
-   End
-   Begin VB.TextBox txtSecondLargest 
+   Begin VB.TextBox txtRes2 
       Height          =   495
-      Left            =   6360
-      TabIndex        =   4
-      Text            =   "2nd Largest"
-      Top             =   4680
-      Width           =   2535
-   End
-   Begin VB.TextBox txtLargest 
-      Height          =   495
-      Left            =   2640
+      Left            =   2880
       TabIndex        =   3
-      Text            =   "Largest"
-      Top             =   4680
-      Width           =   2295
+      Top             =   2640
+      Width           =   1215
    End
-   Begin VB.TextBox txtNum3 
-      Height          =   615
-      Left            =   7560
+   Begin VB.TextBox txtRes1 
+      Height          =   495
+      Left            =   840
       TabIndex        =   2
-      Top             =   1560
-      Width           =   2175
+      Top             =   2640
+      Width           =   1215
    End
-   Begin VB.TextBox txtNum2 
+   Begin VB.CommandButton cmdSeparate 
+      Caption         =   "Separate"
       Height          =   615
-      Left            =   4680
+      Left            =   1920
       TabIndex        =   1
-      Top             =   1560
-      Width           =   2175
+      Top             =   1800
+      Width           =   1215
    End
    Begin VB.TextBox txtNum1 
-      Height          =   615
-      Left            =   1800
+      Height          =   495
+      Left            =   720
       TabIndex        =   0
-      Top             =   1560
+      Top             =   960
       Width           =   2055
    End
+   Begin VB.Label Label1 
+      Caption         =   "Enter Double Value:"
+      Height          =   375
+      Left            =   720
+      TabIndex        =   4
+      Top             =   600
+      Width           =   1935
+   End
 End
-Attribute VB_Name = "frmLargest"
+Attribute VB_Name = "frmDecimalSeparator"
 Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
-Private Sub cmdFind_Click()
-Dim num1 As Integer
-Dim num2 As Integer
-Dim num3 As Integer
+Private Sub Text2_Change()
 
-Dim largest As Integer
-Dim secondLargest As Integer
+End Sub
 
-num1 = Val(txtNum1.Text)
-num2 = Val(txtNum2.Text)
-num3 = Val(txtNum3.Text)
+Private Sub cmdSeparate_Click()
+Dim num As Double
+num = Val(txtNum1.Text)
+txtRes1.Text = Int(num)
+txtRes2.Text = num - Int(num)
 
-If (num1 > num2 And num1 > num3) Then
-        largest = num1
-        
-        If (num2 > num3) Then
-            secondLargest = num2
-        Else
-            secondLargest = num3
-        End If
-        
-        End If
-
-
-If (num2 > num1 And num2 > num3) Then
-        largest = num2
-        
-        If (num1 > num3) Then
-            secondLargest = num1
-        Else
-            secondLargest = num3
-        End If
-        
-        End If
-
-If (num3 > num1 And num3 > num2) Then
-        largest = num3
-        
-        If (num1 > num2) Then
-            secondLargest = num1
-        Else
-            secondLargest = num2
-        End If
-        
-        End If
-
-txtLargest.Text = largest
-txtSecondLargest.Text = secondLargest
 End Sub

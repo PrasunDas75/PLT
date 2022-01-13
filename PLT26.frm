@@ -1,6 +1,6 @@
 VERSION 5.00
 Begin VB.Form frmArrayBinary 
-   Caption         =   "Form2"
+   Caption         =   "ArrayBinarySearch"
    ClientHeight    =   5760
    ClientLeft      =   120
    ClientTop       =   465

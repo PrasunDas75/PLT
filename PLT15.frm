@@ -1,34 +1,34 @@
 VERSION 5.00
 Begin VB.Form frmBinarytoDecimal 
-   Caption         =   "Form2"
-   ClientHeight    =   4845
+   Caption         =   "ConvertBinaryToDecimal"
+   ClientHeight    =   3045
    ClientLeft      =   120
    ClientTop       =   465
    ClientWidth     =   5415
    LinkTopic       =   "Form2"
-   ScaleHeight     =   4845
+   ScaleHeight     =   3045
    ScaleWidth      =   5415
    StartUpPosition =   3  'Windows Default
    Begin VB.TextBox txtRes1 
       Height          =   615
       Left            =   1200
       TabIndex        =   4
-      Top             =   3480
+      Top             =   2040
       Width           =   2775
    End
    Begin VB.CommandButton cmdConv 
       Caption         =   "Convert"
-      Height          =   735
+      Height          =   495
       Left            =   1800
       TabIndex        =   2
-      Top             =   2040
+      Top             =   1080
       Width           =   1815
    End
    Begin VB.TextBox txtNum1 
       Height          =   615
       Left            =   2640
       TabIndex        =   1
-      Top             =   600
+      Top             =   240
       Width           =   2175
    End
    Begin VB.Label Label2 
@@ -36,7 +36,7 @@ Begin VB.Form frmBinarytoDecimal
       Height          =   255
       Left            =   1200
       TabIndex        =   3
-      Top             =   3120
+      Top             =   1800
       Width           =   1095
    End
    Begin VB.Label Label1 
@@ -44,7 +44,7 @@ Begin VB.Form frmBinarytoDecimal
       Height          =   375
       Left            =   360
       TabIndex        =   0
-      Top             =   720
+      Top             =   360
       Width           =   1815
    End
 End

@@ -1,12 +1,12 @@
 VERSION 5.00
 Begin VB.Form frmPattern23 
-   Caption         =   "Form2"
-   ClientHeight    =   9030
+   Caption         =   "GeneratePattern23"
+   ClientHeight    =   5670
    ClientLeft      =   120
    ClientTop       =   465
    ClientWidth     =   10650
    LinkTopic       =   "Form2"
-   ScaleHeight     =   9030
+   ScaleHeight     =   5670
    ScaleWidth      =   10650
    StartUpPosition =   3  'Windows Default
    Begin VB.TextBox txtRes4 
@@ -75,18 +75,18 @@ Begin VB.Form frmPattern23
    End
    Begin VB.TextBox txtN 
       Height          =   615
-      Left            =   1800
+      Left            =   1080
       TabIndex        =   0
       Top             =   240
-      Width           =   855
+      Width           =   1215
    End
    Begin VB.Label Label1 
       Caption         =   "N:"
       Height          =   255
-      Left            =   1200
+      Left            =   360
       TabIndex        =   3
       Top             =   360
-      Width           =   375
+      Width           =   615
    End
 End
 Attribute VB_Name = "frmPattern23"

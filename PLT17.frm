@@ -1,6 +1,6 @@
 VERSION 5.00
 Begin VB.Form frmPurchase 
-   Caption         =   "Form1"
+   Caption         =   "BuyingItems"
    ClientHeight    =   10050
    ClientLeft      =   120
    ClientTop       =   465
@@ -126,7 +126,7 @@ Begin VB.Form frmPurchase
          Height          =   255
          Left            =   480
          TabIndex        =   3
-         Top             =   1680
+         Top             =   1800
          Width           =   855
       End
       Begin VB.Label Label2 
@@ -163,20 +163,45 @@ Attribute VB_Exposed = False
 Private Type item
     code As String
     desc As String
-    qty As Integer
-    price As Integer
-    total As Integer
+    qty As Double
+    price As Double
+    total As Double
     
 End Type
 
 Dim i(20) As item
 Dim index As Integer
 Dim ci As Integer
-Dim gTotal As Integer
+Dim gTotal As Double
+
+Private Sub cmdCard_Click()
+If gTotal > 10000 Then
+    MsgBox "you paid " & Str(gTotal - (gTotal * 10 \ 100))
+ElseIf gTotal < 1000 Then
+    MsgBox "you paid " & Str(gTotal + (gTotal * 2.5 \ 100))
+Else
+    MsgBox "you paid " & Str(gTotal)
+End If
+End Sub
+
+Private Sub cmdCash_Click()
+If gTotal > 10000 Then
+    MsgBox "you paid " & Str(gTotal - (gTotal * 10 \ 100))
+Else
+    MsgBox "you paid " & Str(gTotal)
+End If
+End Sub
 
 Private Sub cmdNext_Click()
 index = index + 1
+If txtIsNext.Text = "y" Then
 update (index)
+txtCode.Text = ""
+txtDesc.Text = ""
+txtQty.Text = ""
+txtPrice.Text = ""
+txtTotPrice.Text = ""
+End If
 End Sub
 
 Private Sub update(index As Integer)

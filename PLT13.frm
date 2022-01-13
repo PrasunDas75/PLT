@@ -1,36 +1,35 @@
 VERSION 5.00
 Begin VB.Form frmFactorial 
-   Caption         =   "Form2"
-   ClientHeight    =   4740
+   Caption         =   "FindFactorial"
+   ClientHeight    =   3990
    ClientLeft      =   120
    ClientTop       =   465
-   ClientWidth     =   7035
+   ClientWidth     =   4110
    LinkTopic       =   "Form2"
-   ScaleHeight     =   4740
-   ScaleWidth      =   7035
+   ScaleHeight     =   3990
+   ScaleWidth      =   4110
    StartUpPosition =   3  'Windows Default
    Begin VB.TextBox txtRes1 
-      Height          =   735
-      Left            =   1920
+      Height          =   855
+      Left            =   600
       TabIndex        =   3
-      Text            =   "Factorial"
-      Top             =   3000
+      Top             =   2640
       Width           =   2535
    End
    Begin VB.CommandButton cmdFact 
       Caption         =   "Factorial"
       Height          =   615
-      Left            =   2160
+      Left            =   1320
       TabIndex        =   2
       Top             =   1800
-      Width           =   1695
+      Width           =   1215
    End
    Begin VB.TextBox txtNum1 
       Height          =   615
-      Left            =   2880
+      Left            =   2400
       TabIndex        =   1
       Top             =   600
-      Width           =   2175
+      Width           =   975
    End
    Begin VB.Label Label1 
       Caption         =   "Enter the number"
@@ -56,7 +55,7 @@ f = 1
 If n = 0 Then
     txtRes1.Text = 1
 ElseIf n < 0 Then
-    txtRes1.Text = "Impossible!"
+    txtRes1.Text = "Not Impossible for (-)ve Number!"
 Else
     While i <= n
         f = f * i
@@ -67,3 +66,4 @@ Else
 End If
 
 End Sub
+

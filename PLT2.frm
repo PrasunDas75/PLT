@@ -1,13 +1,13 @@
 VERSION 5.00
 Begin VB.Form frmSwapNumber 
    Caption         =   "SwapNumber"
-   ClientHeight    =   5130
+   ClientHeight    =   4050
    ClientLeft      =   120
    ClientTop       =   465
-   ClientWidth     =   7050
+   ClientWidth     =   6435
    LinkTopic       =   "Form1"
-   ScaleHeight     =   5130
-   ScaleWidth      =   7050
+   ScaleHeight     =   4050
+   ScaleWidth      =   6435
    StartUpPosition =   3  'Windows Default
    Begin VB.CommandButton cmdSwap 
       Caption         =   "Swap"
@@ -46,7 +46,7 @@ Begin VB.Form frmSwapNumber
       Width           =   1215
    End
    Begin VB.Label Label2 
-      Caption         =   "B:"
+      Caption         =   "Enter B:"
       Height          =   375
       Left            =   360
       TabIndex        =   1
@@ -54,7 +54,7 @@ Begin VB.Form frmSwapNumber
       Width           =   1335
    End
    Begin VB.Label Label1 
-      Caption         =   "A:"
+      Caption         =   "Enter A:"
       Height          =   495
       Left            =   360
       TabIndex        =   0

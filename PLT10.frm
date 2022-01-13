@@ -1,20 +1,20 @@
 VERSION 5.00
 Begin VB.Form frmToString 
-   Caption         =   "Form2"
-   ClientHeight    =   5910
+   Caption         =   "NumberToWords"
+   ClientHeight    =   3495
    ClientLeft      =   120
    ClientTop       =   465
-   ClientWidth     =   8550
+   ClientWidth     =   8370
    LinkTopic       =   "Form2"
-   ScaleHeight     =   5910
-   ScaleWidth      =   8550
+   ScaleHeight     =   3495
+   ScaleWidth      =   8370
    StartUpPosition =   3  'Windows Default
    Begin VB.TextBox txtRes 
       Height          =   495
       Left            =   1200
       TabIndex        =   2
-      Top             =   3240
-      Width           =   6135
+      Top             =   2640
+      Width           =   6015
    End
    Begin VB.CommandButton cmdDisp 
       Caption         =   "Display"
@@ -25,11 +25,19 @@ Begin VB.Form frmToString
       Width           =   2175
    End
    Begin VB.TextBox txtNum1 
+      Height          =   615
+      Left            =   2760
+      TabIndex        =   0
+      Top             =   840
+      Width           =   2535
+   End
+   Begin VB.Label Label1 
+      Caption         =   "Enter the number:"
       Height          =   495
       Left            =   2880
-      TabIndex        =   0
-      Top             =   600
-      Width           =   2415
+      TabIndex        =   3
+      Top             =   360
+      Width           =   1935
    End
 End
 Attribute VB_Name = "frmToString"

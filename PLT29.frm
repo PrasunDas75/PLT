@@ -1,29 +1,29 @@
 VERSION 5.00
 Begin VB.Form frmSymMat 
-   Caption         =   "Form1"
-   ClientHeight    =   3975
+   Caption         =   "CheckIfSymmetricMatrix"
+   ClientHeight    =   2715
    ClientLeft      =   120
    ClientTop       =   465
-   ClientWidth     =   8490
+   ClientWidth     =   7170
    LinkTopic       =   "Form1"
-   ScaleHeight     =   3975
-   ScaleWidth      =   8490
+   ScaleHeight     =   2715
+   ScaleWidth      =   7170
    StartUpPosition =   3  'Windows Default
    Begin VB.CommandButton cmdCheck 
       Caption         =   "Check"
-      Height          =   375
-      Left            =   2640
+      Height          =   615
+      Left            =   2520
       TabIndex        =   4
-      Top             =   2760
-      Width           =   2175
+      Top             =   1800
+      Width           =   1815
    End
    Begin VB.CommandButton cmdAdd 
       Caption         =   "Add"
-      Height          =   375
-      Left            =   6360
+      Height          =   495
+      Left            =   5760
       TabIndex        =   3
       Top             =   1080
-      Width           =   1215
+      Width           =   1095
    End
    Begin VB.TextBox txtElems1 
       Height          =   495
@@ -55,7 +55,7 @@ Begin VB.Form frmSymMat
       Width           =   735
    End
    Begin VB.Label Label2 
-      Caption         =   "Collumn"
+      Caption         =   "Column"
       Height          =   375
       Left            =   2160
       TabIndex        =   6
